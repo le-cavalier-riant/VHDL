@@ -1,0 +1,56 @@
+$date
+  Fri Nov 18 19:14:12 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module jk_flip_flop_tb $end
+$var reg 1 ! clock $end
+$var reg 1 " j $end
+$var reg 1 # k $end
+$var reg 1 $ q $end
+$var reg 1 % non_q $end
+$scope module uut $end
+$var reg 1 & clock $end
+$var reg 1 ' j $end
+$var reg 1 ( k $end
+$var reg 1 ) q $end
+$var reg 1 * non_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+U$
+U%
+0&
+0'
+0(
+U)
+U*
+#3000000
+#5000000
+1!
+1&
+#10000000
+#13000000
+1#
+1(
+#23000000
+1"
+0#
+1'
+0(
+#33000000
+1#
+1(
+#43000000
