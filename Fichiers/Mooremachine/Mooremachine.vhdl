@@ -1,17 +1,17 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity Mooremachine is
 
-	Port (
+	port (
 
-		clk : in STD_LOGIC;
-		clr : in STD_LOGIC;
-		a : in STD_LOGIC;
-		b : in STD_LOGIC;
+		clk : in std_logic;
+		clr : in std_logic;
+		a : in std_logic;
+		b : in std_logic;
 
-		y1 : out STD_LOGIC;
-		y2 : out STD_LOGIC
+		y1 : out std_logic;
+		y2 : out std_logic
 
 	);
 

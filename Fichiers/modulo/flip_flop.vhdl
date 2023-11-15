@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity flip_flop is
 
-	port(
+	port (
 
 		D, clk, clr: in std_logic;
 

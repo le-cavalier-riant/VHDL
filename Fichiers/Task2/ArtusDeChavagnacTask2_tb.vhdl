@@ -1,23 +1,23 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY ArtusDeChavagnacTask2_tb IS
-END ArtusDeChavagnacTask2_tb;
+entity ArtusDeChavagnacTask2_tb is
+end ArtusDeChavagnacTask2_tb;
 
-ARCHITECTURE behavior OF ArtusDeChavagnacTask2_tb IS
+architecture behavior of ArtusDeChavagnacTask2_tb is
 
-	COMPONENT ArtusDeChavagnacTask2
+	component ArtusDeChavagnacTask2
 
-		PORT (
+		port (
 
-			Clock : IN std_logic;
+			Clock : in std_logic;
 
-			q : OUT std_logic;
-			notq : OUT std_logic
+			q : out std_logic;
+			notq : out std_logic
 
 		);
 
-	END COMPONENT;
+	end component;
 
 	signal Clock : std_logic := '0';
 
@@ -26,9 +26,9 @@ ARCHITECTURE behavior OF ArtusDeChavagnacTask2_tb IS
 
 	constant Clock_period : time := 10 ns;
 
-BEGIN
+begin
 
-	uut: ArtusDeChavagnacTask2 PORT MAP (
+	uut: ArtusDeChavagnacTask2 port map (
 
 		Clock => Clock,
 		q => q,
@@ -55,4 +55,4 @@ BEGIN
 
 	end process;
 
-END;
+end;

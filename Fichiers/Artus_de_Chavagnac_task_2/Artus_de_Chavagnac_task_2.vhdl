@@ -1,14 +1,14 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 entity Artus_de_Chavagnac_task_2 is
-Port (
-sens_1 : in STD_LOGIC;
-sens_2 : in STD_LOGIC;
-sens_3 : in STD_LOGIC;
-sens_4 : in STD_LOGIC;
-stop : in STD_LOGIC;
-turn : out STD_LOGIC;
-rotate : out STD_LOGIC
+port (
+sens_1 : in std_logic;
+sens_2 : in std_logic;
+sens_3 : in std_logic;
+sens_4 : in std_logic;
+stop : in std_logic;
+turn : out std_logic;
+rotate : out std_logic
 );
 end Artus_de_Chavagnac_task_2;
 architecture Behavioral of Artus_de_Chavagnac_task_2 is

@@ -1,27 +1,27 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY multiplexer_clock_tb IS
-END multiplexer_clock_tb;
+entity multiplexer_clock_tb is
+end multiplexer_clock_tb;
 
-ARCHITECTURE behavior OF multiplexer_clock_tb IS
+architecture behavior of multiplexer_clock_tb is
 
-COMPONENT multiplexer_clock
+component multiplexer_clock
 
-	PORT(
+	port (
 
-		a : IN std_logic;
-		b : IN std_logic;
-		c : IN std_logic;
-		d : IN std_logic;
-		Clock : IN std_logic;
-		s : IN std_logic_vector(1 downto 0);
+		a : in std_logic;
+		b : in std_logic;
+		c : in std_logic;
+		d : in std_logic;
+		Clock : in std_logic;
+		s : in std_logic_vector(1 downto 0);
 
-		f : OUT std_logic
+		f : out std_logic
 
 	);
 
-END COMPONENT;
+end component;
 
 signal a : std_logic := '0';
 signal b : std_logic := '0';
@@ -34,9 +34,9 @@ signal f : std_logic;
 
 constant Clock_period : time := 10 ns;
 
-BEGIN
+begin
 
-	uut: multiplexer_clock PORT MAP (
+	uut: multiplexer_clock port map (
 
 		a => a,
 		b => b,
@@ -115,7 +115,7 @@ BEGIN
 		d <= '1';
 
 		wait for 10 ns;
-		
+
 		a <= '0';
 		b <= '0';
 		c <= '0';
@@ -129,4 +129,4 @@ BEGIN
 
 	end process;
 
-END;
+end;

@@ -1,25 +1,25 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY states_tb IS
-END states_tb;
+entity states_tb is
+end states_tb;
 
-ARCHITECTURE behavior OF states_tb IS
+architecture behavior of states_tb is
 
-	COMPONENT states
+	component states
 
-		PORT (
+		port (
 
-			clock : IN std_logic;
-			clear : IN std_logic;
+			clock : in std_logic;
+			clear : in std_logic;
 
-			a : IN std_logic_vector (1 downto 0);
+			a : in std_logic_vector (1 downto 0);
 
-			y : OUT std_logic_vector (1 downto 0)
+			y : out std_logic_vector (1 downto 0)
 
 		);
 
-	END COMPONENT;
+	end component;
 
 	signal clock : std_logic := '0';
 	signal clear : std_logic := '0';
@@ -30,9 +30,9 @@ ARCHITECTURE behavior OF states_tb IS
 
 	constant clock_period : time := 50 ns;
 
-BEGIN
+begin
 
-	uut: states PORT MAP (
+	uut: states port map (
 
 		clock => clock,
 		clear => clear,
@@ -94,4 +94,4 @@ BEGIN
 
 	end process;
 
-END;
+end;

@@ -1,16 +1,16 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity full_adder_case_when is
 
-	Port (
+	port (
 
-		a : in STD_LOGIC;
-		b : in STD_LOGIC;
-		cin : in STD_LOGIC;
+		a : in std_logic;
+		b : in std_logic;
+		cin : in std_logic;
 
-		s : out STD_LOGIC;
-		cout : out STD_LOGIC
+		s : out std_logic;
+		cout : out std_logic
 
 	);
 

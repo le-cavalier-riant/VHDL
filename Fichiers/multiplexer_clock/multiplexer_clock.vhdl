@@ -1,9 +1,9 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity multiplexex_clock is
 
-	port(
+	port (
 
 		a,b,c,d: in std_logic;
 		s: in std_logic_vector (1 downto 0);

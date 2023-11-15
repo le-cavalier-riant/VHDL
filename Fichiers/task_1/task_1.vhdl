@@ -1,17 +1,17 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity task_1 is
 
-	Port (
+	port (
 
-		B0 : in STD_LOGIC;
-		B1 : in STD_LOGIC;
-		B2 : in STD_LOGIC;
+		B0 : in std_logic;
+		B1 : in std_logic;
+		B2 : in std_logic;
 
-		G0 : out STD_LOGIC;
-		G1 : out STD_LOGIC;
-		G2 : out STD_LOGIC
+		G0 : out std_logic;
+		G1 : out std_logic;
+		G2 : out std_logic
 
 		);
 

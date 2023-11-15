@@ -1,28 +1,28 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY heater_case_when_tb IS
-END heater_case_when_tb;
+entity heater_case_when_tb is
+end heater_case_when_tb;
 
-ARCHITECTURE behavior OF heater_case_when_tb IS
+architecture behavior of heater_case_when_tb is
 
-COMPONENT heater_case_when
+component heater_case_when
 
-	PORT(
+	port (
 
-		a : IN std_logic;
-		b : IN std_logic;
-		c : IN std_logic;
-		d : IN std_logic;
+		a : in std_logic;
+		b : in std_logic;
+		c : in std_logic;
+		d : in std_logic;
 
-		sw1 : OUT std_logic;
-		sw2 : OUT std_logic;
-		sw3 : OUT std_logic;
-		sw4 : OUT std_logic
+		sw1 : out std_logic;
+		sw2 : out std_logic;
+		sw3 : out std_logic;
+		sw4 : out std_logic
 
 	);
 
-END COMPONENT;
+end component;
 
 signal a : std_logic := '0';
 signal b : std_logic := '0';
@@ -34,9 +34,9 @@ signal sw2 : std_logic;
 signal sw3 : std_logic;
 signal sw4 : std_logic;
 
-BEGIN
+begin
 
-	uut: heater_case_when PORT MAP (
+	uut: heater_case_when port map (
 
 		a => a,
 		b => b,
@@ -92,4 +92,4 @@ BEGIN
 
 	end process;
 
-END;
+end;

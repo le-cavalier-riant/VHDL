@@ -1,25 +1,25 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY full_adder_tb IS
-END full_adder_tb;
+entity full_adder_tb is
+end full_adder_tb;
 
-ARCHITECTURE behavior OF full_adder_tb IS
+architecture behavior of full_adder_tb is
 
-COMPONENT full_adder
+component full_adder
 
-	PORT(
+	port (
 
-		a : IN std_logic;
-		b : IN std_logic;
-		cin : IN std_logic;
+		a : in std_logic;
+		b : in std_logic;
+		cin : in std_logic;
 
-		s : OUT std_logic;
-		cout : OUT std_logic
+		s : out std_logic;
+		cout : out std_logic
 
 	);
 
-END COMPONENT;
+end component;
 
 signal a : std_logic := '0';
 signal b : std_logic := '0';
@@ -28,9 +28,9 @@ signal cin : std_logic := '0';
 signal s : std_logic;
 signal cout : std_logic;
 
-BEGIN
+begin
 
-	uut: full_adder PORT MAP (
+	uut: full_adder port map (
 
 		a => a,
 		b => b,
@@ -96,4 +96,4 @@ BEGIN
 
 	end process;
 
-END;
+end;

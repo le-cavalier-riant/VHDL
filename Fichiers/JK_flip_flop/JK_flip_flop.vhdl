@@ -1,16 +1,16 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity JK_flip_flop is
 
-	Port (
+	port (
 
-		CLOCK : in STD_LOGIC;
-		J : in STD_LOGIC;
-		K : in STD_LOGIC;
+		CLOCK : in std_logic;
+		J : in std_logic;
+		K : in std_logic;
 
-		Q : inout STD_LOGIC;
-		NON_Q : inout STD_LOGIC
+		Q : inout std_logic;
+		NON_Q : inout std_logic
 
 	);
 

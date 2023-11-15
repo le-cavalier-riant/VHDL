@@ -1,22 +1,22 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY MealyMachine_tb IS
-END MealyMachine_tb;
+entity MealyMachine_tb is
+end MealyMachine_tb;
 
-ARCHITECTURE behavior OF MealyMachine_tb IS
+architecture behavior of MealyMachine_tb is
 
-	COMPONENT MealyMachine
+	component MealyMachine
 
-		PORT (
+		port (
 
-			a, b, clock, clear : IN std_logic;
+			a, b, clock, clear : in std_logic;
 
-			c : OUT std_logic
+			c : out std_logic
 
 		);
 
-	END COMPONENT;
+	end component;
 
 	signal a : std_logic := '0';
 	signal b : std_logic := '0';
@@ -27,9 +27,9 @@ ARCHITECTURE behavior OF MealyMachine_tb IS
 
 	constant clockPeriod : time := 10 ns;
 
-BEGIN
+begin
 
-	uut: MealyMachine PORT MAP (
+	uut: MealyMachine port map (
 
 		a => a,
 		b => b,
@@ -119,4 +119,4 @@ BEGIN
 
 	end process;
 
-END;
+end;

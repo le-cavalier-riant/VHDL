@@ -1,19 +1,19 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-ENTITY Mooremachinetb IS
-END Mooremachinetb;
-ARCHITECTURE behavior OF Mooremachinetb IS 
+library ieee;
+use ieee.std_logic_1164.all;
+entity Mooremachinetb is
+end Mooremachinetb;
+architecture behavior of Mooremachinetb is
  -- Component Declaration for the Unit Under Test (UUT)
- COMPONENT Mooremachine
- PORT(
- clk : IN std_logic;
- clr : IN std_logic;
- a : IN std_logic;
- b : IN std_logic;
- y1 : OUT std_logic;
- y2 : OUT std_logic
+ component Mooremachine
+ port (
+ clk : in std_logic;
+ clr : in std_logic;
+ a : in std_logic;
+ b : in std_logic;
+ y1 : out std_logic;
+ y2 : out std_logic
  );
- END COMPONENT; 
+ end component;
  --Inputs
  signal clk : std_logic := '0';
  signal clr : std_logic := '0';
@@ -24,9 +24,9 @@ ARCHITECTURE behavior OF Mooremachinetb IS
  signal y2 : std_logic;
  -- Clock period definitions
  constant clk_period : time := 50 ns;
-BEGIN
+begin
 -- Instantiate the Unit Under Test (UUT)
- uut: Mooremachine PORT MAP (
+ uut: Mooremachine port map (
  clk => clk,
  clr => clr,
  a => a,
@@ -65,4 +65,4 @@ b <= '1';
 wait for 3*clk_period;
 wait;
 end process;
-END;
+end;

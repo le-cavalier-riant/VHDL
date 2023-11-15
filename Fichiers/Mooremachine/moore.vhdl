@@ -1,16 +1,16 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity moore is
 
-	Port (
+	port (
 
-		clk : in STD_LOGIC;
-		clr : in STD_LOGIC;
+		clk : in std_logic;
+		clr : in std_logic;
 
-		a : in STD_LOGIC_VECTOR (1 downto 0);
+		a : in std_logic_vector (1 downto 0);
 
-		y : out STD_LOGIC_VECTOR (1 downto 0)
+		y : out std_logic_vector (1 downto 0)
 
 	);
 
@@ -56,7 +56,7 @@ begin
 					next_s <= s2;
 
 				else
-				
+
 					next_s <= s1;
 
 				end if;
@@ -64,32 +64,32 @@ begin
 			when s2 =>
 
 				y <= "00";
-				
+
 				if (a = "10") then
-				
+
 					next_s <= s2;
 
 				elsif (a = "11") then
-				
+
 					next_s <= s3;
 
 				elsif (a = "01") then
-				
+
 					next_s <= s4;
 
-				else 
-				
+				else
+
 					next_s <= s2;
 
 				end if;
-			
+
 			when s3 =>
 
 				y <= "10";
 				next_s <= s3;
-			
+
 			when s4 =>
-			
+
 				y <= "01";
 				next_s <= s4;
 

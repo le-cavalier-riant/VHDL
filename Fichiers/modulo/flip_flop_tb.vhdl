@@ -1,22 +1,22 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY flip_flop_tb IS
-END flip_flop_tb;
+entity flip_flop_tb is
+end flip_flop_tb;
 
-ARCHITECTURE behavior OF flip_flop_tb IS
+architecture behavior of flip_flop_tb is
 
-COMPONENT flip_flop
+component flip_flop
 
-	PORT (
+	port (
 
-		D, clk, clr : IN std_logic;
+		D, clk, clr : in std_logic;
 
-		q, noq : OUT std_logic
+		q, noq : out std_logic
 
 	);
 
-END COMPONENT;
+end component;
 
 signal D : std_logic := '0';
 signal clk : std_logic := '0';
@@ -26,9 +26,9 @@ signal q : std_logic;
 signal noq : std_logic;
 constant clk_period : time := 10 ns;
 
-BEGIN
+begin
 
-	uut: flip_flop PORT MAP (
+	uut: flip_flop port map (
 
 		D => D,
 		clk => clk,
@@ -69,7 +69,7 @@ BEGIN
 		wait for 20 ns;
 
 		clr <= '0';
-		D <= '0'; 
+		D <= '0';
 
 		wait for 20 ns;
 
@@ -90,4 +90,4 @@ BEGIN
 
 	end process;
 
-END;
+end;

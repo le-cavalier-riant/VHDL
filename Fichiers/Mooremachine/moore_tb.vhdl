@@ -1,25 +1,25 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY moore_tb IS
-END moore_tb;
+entity moore_tb is
+end moore_tb;
 
-ARCHITECTURE behavior OF moore_tb IS
+architecture behavior of moore_tb is
 
-	COMPONENT moore
+	component moore
 
-		PORT (
+		port (
 
-			clk : IN std_logic;
-			clr : IN std_logic;
+			clk : in std_logic;
+			clr : in std_logic;
 
-			a : IN std_logic_vector (1 downto 0);
+			a : in std_logic_vector (1 downto 0);
 
-			y : OUT std_logic_vector (1 downto 0)
+			y : out std_logic_vector (1 downto 0)
 
 		);
 
-	END COMPONENT;
+	end component;
 
 	signal clk : std_logic := '0';
 	signal clr : std_logic := '0';
@@ -30,9 +30,9 @@ ARCHITECTURE behavior OF moore_tb IS
 
 	constant clk_period : time := 50 ns;
 
-BEGIN
+begin
 
-	uut: moore PORT MAP (
+	uut: moore port map (
 
 		a => a,
 		y => y,
@@ -92,4 +92,4 @@ BEGIN
 
 	end process;
 
-END;
+end;

@@ -1,19 +1,19 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-ENTITY Artus_de_Chavagnac_task_2_tb IS
-END Artus_de_Chavagnac_task_2_tb;
-ARCHITECTURE behavior OF Artus_de_Chavagnac_task_2_tb IS
-COMPONENT Artus_de_Chavagnac_task_2
-PORT(
-sens_1 : IN STD_LOGIC;
-sens_2 : IN STD_LOGIC;
-sens_3 : IN STD_LOGIC;
-sens_4 : IN STD_LOGIC;
-stop : IN STD_LOGIC;
-turn : OUT STD_LOGIC;
-rotate : OUT STD_LOGIC
+library ieee;
+use ieee.std_logic_1164.all;
+entity Artus_de_Chavagnac_task_2_tb is
+end Artus_de_Chavagnac_task_2_tb;
+architecture behavior of Artus_de_Chavagnac_task_2_tb is
+component Artus_de_Chavagnac_task_2
+port (
+sens_1 : in std_logic;
+sens_2 : in std_logic;
+sens_3 : in std_logic;
+sens_4 : in std_logic;
+stop : in std_logic;
+turn : out std_logic;
+rotate : out std_logic
 );
-END COMPONENT;
+end component;
 signal sens_1 : std_logic := '0';
 signal sens_2 : std_logic := '0';
 signal sens_3 : std_logic := '0';
@@ -21,8 +21,8 @@ signal sens_4 : std_logic := '0';
 signal stop : std_logic := '0';
 signal turn : std_logic;
 signal rotate : std_logic;
-BEGIN
-uut: Artus_de_Chavagnac_task_2 PORT MAP (
+begin
+uut: Artus_de_Chavagnac_task_2 port map (
 sens_1 => sens_1,
 sens_2 => sens_2,
 sens_3 => sens_3,
@@ -108,4 +108,4 @@ sens_4 <= '1';
 wait for 10 ns;
 wait;
 end process;
-END;
+end;

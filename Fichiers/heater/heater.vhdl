@@ -1,19 +1,19 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity heater is
 
-	Port (
+	port (
 
-		a : in STD_LOGIC;
-		b : in STD_LOGIC;
-		c : in STD_LOGIC;
-		d : in STD_LOGIC;
+		a : in std_logic;
+		b : in std_logic;
+		c : in std_logic;
+		d : in std_logic;
 
-		SW1 : out STD_LOGIC;
-		SW2 : out STD_LOGIC;
-		SW3 : out STD_LOGIC;
-		SW4 : out STD_LOGIC
+		SW1 : out std_logic;
+		SW2 : out std_logic;
+		SW3 : out std_logic;
+		SW4 : out std_logic
 
 	);
 

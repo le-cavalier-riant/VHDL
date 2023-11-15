@@ -1,19 +1,19 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity heater_case_when is
 
-	Port (
+	port (
 
-		a : in STD_LOGIC;
-		b : in STD_LOGIC;
-		c : in STD_LOGIC;
-		d : in STD_LOGIC;
+		a : in std_logic;
+		b : in std_logic;
+		c : in std_logic;
+		d : in std_logic;
 
-		sw1 : out STD_LOGIC;
-		sw2 : out STD_LOGIC;
-		sw3 : out STD_LOGIC;
-		sw4 : out STD_LOGIC
+		sw1 : out std_logic;
+		sw2 : out std_logic;
+		sw3 : out std_logic;
+		sw4 : out std_logic
 
 	);
 
